@@ -1,0 +1,15 @@
+
+.profile-card {
+  .profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #dee9ee;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 40px;
+    }
+  }
+}
