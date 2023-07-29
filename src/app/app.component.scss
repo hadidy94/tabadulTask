@@ -7,12 +7,3 @@
   background: #dfe9ee;
 }
 
-.profile-card-cont
-{
-  background: #000;
-  &:last-child{
-    .profile-card {
-      padding-bottom: 0 !important;
-    }
-  }
-}

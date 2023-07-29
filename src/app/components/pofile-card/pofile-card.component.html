@@ -1,4 +1,4 @@
-<div class="profile-card py-4 border-bottom">
+<div class="profile-card py-4">
   <div class="d-flex align-items-start justify-content-between mb-3">
     <div class="profile-title d-flex align-items-center  gap-3 ">
       <div class="profile-img">
@@ -14,25 +14,28 @@
   </div>
 
   <div class="status mb-4">
-    <h4 class="status-text">{{statusTxt}}</h4>
+    <h5 class="status-text">{{statusTxt}}</h5>
   </div>
 
   <div class="description">
     <h5 class="mb-3" *ngIf="user.moreInput">يوجد تفاصيل اضافيه في بعض الحقول</h5>
 
     <ng-template [ngIf]="user.fileInformation">
-      <div class="main-bg py-4 px-3 d-flex gap-3 rounded-2" >
+      <div class="main-bg py-4 px-3 d-flex gap-3 rounded-2">
         <img src="/assets/file.png" width="40" height="40" />
         <div>
           <h6>ملف الرفع المساجي</h6>
-          <span>{{user.fileInformation.fileExtension}}, {{user.fileInformation.fileSize}}</span>
+          <span>
+            {{user.fileInformation.fileExtension}},
+            {{user.fileInformation.fileSize}}
+          </span>
         </div>
       </div>
     </ng-template>
 
 
     <ng-template [ngIf]="user.description">
-      <div class="main-bg py-4 px-3 rounded-2" >
+      <div class="main-bg py-4 px-3 rounded-2">
         <h6 class="fw-bold text-main">{{user.description.title}}</h6>
         <p class="text-muted">{{user.description.text}}</p>
       </div>
